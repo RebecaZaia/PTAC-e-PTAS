@@ -23,8 +23,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <TopbarMenu />
-        {children}
+        <div className="w-260 m-auto">
+          <TopbarMenu />
+          {children}
+        </div>
       </body>
     </html>
   );
