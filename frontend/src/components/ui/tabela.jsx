@@ -12,7 +12,7 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 
-export function TabsDemo() {
+export function Tabela() {
   return (
     <Tabs defaultValue="overview" className="w-[400px]">
       <TabsList>

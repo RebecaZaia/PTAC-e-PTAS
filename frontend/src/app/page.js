@@ -1,5 +1,4 @@
-import Image from "next/image";
-import TabsDemo from "@/components/TabsDemo";
+import { Tabela } from "@/components/ui/tabela";
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
       </div>
         
       <div>
-        <TabsDemo />
+        <Tabela />
       </div>
 
     </div>
