@@ -11,42 +11,34 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
+import { Fieldgroup } from "@/components/ui/fieldGroupe";
 
 export function Tabela() {
   return (
     <Tabs defaultValue="overview" className="w-[400px]">
       <TabsList>
-        <TabsTrigger value="overview">Overview</TabsTrigger>
-        <TabsTrigger value="analytics">Analytics</TabsTrigger>
-        <TabsTrigger value="reports">Reports</TabsTrigger>
-        <TabsTrigger value="settings">Settings</TabsTrigger>
+        <TabsTrigger value="overview">Executar um link</TabsTrigger>
+        <TabsTrigger value="analytics">Gerar QR Code</TabsTrigger>
+
       </TabsList>
       <TabsContent value="overview">
         <Card>
           <CardHeader>
-            <CardTitle>Overview</CardTitle>
-            <CardDescription>
-              View your key metrics and recent project activity. Track progress
-              across all your active projects.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-sm text-muted-foreground">
-            You have 12 active projects and 3 pending tasks.
+            <CardContent className="text-sm text-muted-foreground">
+            Executar um link longo
           </CardContent>
+          <Fieldgroup />
+          </CardHeader>
         </Card>
       </TabsContent>
       <TabsContent value="analytics">
         <Card>
           <CardHeader>
-            <CardTitle>Analytics</CardTitle>
+            <CardTitle>Não disponível</CardTitle>
             <CardDescription>
-              Track performance and user engagement metrics. Monitor trends and
-              identify growth opportunities.
+              Está opção ainda não está disponível no momento.
             </CardDescription>
           </CardHeader>
-          <CardContent className="text-sm text-muted-foreground">
-            Page views are up 25% compared to last month.
-          </CardContent>
         </Card>
       </TabsContent>
       <TabsContent value="reports">

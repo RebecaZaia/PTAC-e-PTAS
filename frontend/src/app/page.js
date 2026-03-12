@@ -18,6 +18,13 @@ export default function Home() {
         <Tabela />
       </div>
 
+      <text>Cadastre-se. Seu plano gratuito inclui:</text>
+      <div className="flex flex-row items-center">
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">🔗50 links curtos/mês</a>
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">🔗 Links personalizadas/mês</a>
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">🔗 Cliques ilimitados em links</a>
+      </div>
+
     </div>
   );
 } 
