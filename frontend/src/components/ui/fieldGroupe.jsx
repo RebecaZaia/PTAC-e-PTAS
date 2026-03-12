@@ -18,7 +18,6 @@ export function Fieldgroup() {
         <FieldLabel htmlFor="fieldgroup-email">Personalize a URL: https://min.com/</FieldLabel>
         <Input
           id="fieldgroup-email"
-          type="email"
           placeholder="Adicionar a URL personalizada aqui"
         />
       </Field>
