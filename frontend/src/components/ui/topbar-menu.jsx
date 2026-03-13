@@ -15,8 +15,8 @@ import { Button } from "./button";
                         <span className="font-medium">Recursos</span>
                     </div>
                 </div>
-                <div className="flex gap-4">
-                    <Button variant="outline" size='ms' >Login</Button>
+                <div className="flex gap-3">
+                    <Button variant="outline" className="px-2" size='ms' >Login</Button>
                     <Button>Cadastrar-se</Button>
                     </div>
             </nav>

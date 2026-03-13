@@ -15,7 +15,7 @@ import { Fieldgroup } from "@/components/ui/fieldgroupe";
 
 export function Tabela() {
   return (
-    <Tabs defaultValue="shortener" className="w-[400px]">
+    <Tabs defaultValue="shortener" className="w-full">
       <TabsList>
         <TabsTrigger value="shortener">Executar um link</TabsTrigger>
         <TabsTrigger value="qrcode">Gerar QR Code</TabsTrigger>
