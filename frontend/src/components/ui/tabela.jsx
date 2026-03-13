@@ -11,17 +11,17 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import { Fieldgroup } from "@/components/ui/fieldGroupe";
+import { Fieldgroup } from "@/components/ui/fieldgroupe";
 
 export function Tabela() {
   return (
-    <Tabs defaultValue="overview" className="w-[400px]">
+    <Tabs defaultValue="shortener" className="w-[400px]">
       <TabsList>
-        <TabsTrigger value="overview">Executar um link</TabsTrigger>
-        <TabsTrigger value="analytics">Gerar QR Code</TabsTrigger>
+        <TabsTrigger value="shortener">Executar um link</TabsTrigger>
+        <TabsTrigger value="qrcode">Gerar QR Code</TabsTrigger>
 
       </TabsList>
-      <TabsContent value="overview">
+      <TabsContent value="shortener">
         <Card>
           <CardHeader>
             <CardContent className="text-sm text-muted-foreground">
@@ -31,7 +31,7 @@ export function Tabela() {
           </CardHeader>
         </Card>
       </TabsContent>
-      <TabsContent value="analytics">
+      <TabsContent value="qrcode">
         <Card>
           <CardHeader>
             <CardTitle>Não disponível</CardTitle>

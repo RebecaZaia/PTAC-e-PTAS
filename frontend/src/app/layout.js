@@ -1,6 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import TopbarMenu from "@/components/ui/topbar-menu";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({
+  variable: "--font-sans",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" /*className={cn("font-sans", inter.variable)}*/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

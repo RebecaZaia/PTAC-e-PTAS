@@ -9,12 +9,10 @@ import { Button } from "./button";
                 <div className="flex items-center gap-2 text-sm md:gap-4">
                     <div className="flex flex-col gap-1">
                         <span className="font-medium">Planos</span>
-                        <span className="text-muted-foreground text-xs">Manage preferences</span>
                     </div>
                     <Separator orientation="vertical" />
                     <div className="flex flex-col gap-1">
                         <span className="font-medium">Recursos</span>
-                        <span className="text-muted-foreground text-xs">Profile & security</span>
                     </div>
                 </div>
                 <div className="flex gap-4">
