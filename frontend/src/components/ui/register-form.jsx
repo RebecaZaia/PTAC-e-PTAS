@@ -15,19 +15,28 @@ import {
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
 
-export function LoginForm() {
+export function RegisterForm() {
   return (
     <div className={"flex flex-col gap-6"}>
       <Card>
         <CardHeader>
-          <CardTitle>Faça login na sua conta</CardTitle>
+          <CardTitle>Faça registro na sua conta</CardTitle>
           <CardDescription>
-            Insira seu e-mail abaixo para fazer login na sua conta.
+            Insira seus dados abaixo para criar uma conta.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <form>
             <FieldGroup>
+              <Field>
+                <FieldLabel htmlFor="name">Nome Completo</FieldLabel>
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </Field>
               <Field>
                 <FieldLabel htmlFor="email">Email</FieldLabel>
                 <Input
@@ -42,9 +51,9 @@ export function LoginForm() {
                 <Input id="password" type="password" required />
               </Field>
               <Field>
-                <Button type="submit">Login</Button>
+                <Button type="submit">Cadastrar</Button>
                 <FieldDescription className="text-center">
-                  Não tem uma conta? <Link href="/register">Cadastrar-se</Link>
+                  Já tem uma conta? <Link href="/login">Fazer login</Link>
                 </FieldDescription>
               </Field>
             </FieldGroup>
