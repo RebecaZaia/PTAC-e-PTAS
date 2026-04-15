@@ -16,8 +16,8 @@ import { Button } from "./button";
                     </div>
                 </div>
                 <div className="flex gap-3">
-                    <Button variant="outline" className="px-2" size='ms' >Login</Button>
-                    <Button>Cadastrar-se</Button>
+                    <Button variant="outline" className="px-2" size='ms' ><a href="/login">Login</a></Button>
+                    <Button><a href="/register">Cadastrar-se</a></Button>
                     </div>
             </nav>
         </header>
